@@ -1,0 +1,29 @@
+<script>
+
+    const ERROR = 60
+    const SMALL = 560
+    const MEDIUM = 980
+    const LARGE =1200
+    const EXTRA_LARGE = 3000
+    //HW1:add breakpoints -DONE
+    let windowWidth = innerWidth
+
+    if( windowWidth >= ERROR && windowWidth <= SMALL) {
+        alert("Windows resolution:Extra small " + windowWidth +" px")
+    }
+    else if(windowWidth >= SMALL && windowWidth <= MEDIUM) {
+        alert("Windows resolution:small " + windowWidth +" px")
+    }
+    else if(windowWidth >= MEDIUM && windowWidth <= LARGE) {
+        alert("Windows resolution: medium " + windowWidth +" px")
+    }
+    else if(windowWidth >= LARGE && windowWidth <= EXTRA_LARGE) {
+        alert("Windows resolution:large " + windowWidth +" px")
+    }
+    else if(windowWidth < ERROR && windowWidth > EXTRA_LARGE) {
+        alert("ERROR " + windowWidth +" px")
+    }  
+    else {
+        alert("ERROR "  + windowWidth +" px")
+    }
+</script>
